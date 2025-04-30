@@ -12,7 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Aditya Kumar - Portfolio</title>
+        <title>Astha Chauhan - Portfolio</title>
         <meta name="description" content="Full Stack Developer & Cloud Engineer Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="icon" href="/favicon.ico" />

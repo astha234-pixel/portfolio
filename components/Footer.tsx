@@ -14,12 +14,12 @@ const Footer = () => {
     {
       name: 'LinkedIn',
       icon: FaLinkedin,
-      url: 'https://www.linkedin.com/in/aditya-singh-b89b25225/'
+      url: 'https://www.linkedin.com/in/aastha-chauhan-a9b571252'
     },
     {
       name: 'Email',
       icon: FaEnvelope,
-      url: 'mailto:adityasingh89525@gmail.com'
+      url: 'mailto:chauhanaastha438@gmail.com'
     }
   ];
 
@@ -55,7 +55,7 @@ const Footer = () => {
             className="text-center text-text-secondary"
           >
             <p className="text-sm">
-              © {currentYear} Aditya Singh. All rights reserved.
+              © {currentYear} Astha Chauhan. All rights reserved.
             </p>
             <p className="text-sm mt-2">
               Built with Next.js, Tailwind CSS, and ❤️

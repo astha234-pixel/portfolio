@@ -10,7 +10,7 @@ const HeroTechIcon = () => {
       <div className="relative w-64 h-64 rounded-full overflow-hidden z-20 bg-primary animate-float">
         <Image
           src="/profile.jpg"
-          alt="Profile"
+          alt="Astha"
           fill
           className="object-cover rounded-full"
           sizes="256px"

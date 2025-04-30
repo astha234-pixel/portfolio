@@ -1,63 +1,64 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaCode, FaCloud, FaShieldAlt } from 'react-icons/fa';
-import { SiTypescript, SiReact, SiNextdotjs, SiPython, SiAmazon, SiDocker, SiJavascript, SiNodedotjs, SiMongodb } from 'react-icons/si';
+import { FaBrain, FaChartLine, FaRobot } from 'react-icons/fa';
+import { SiTensorflow, SiPytorch, SiPython, SiAmazon, SiDocker, SiJupyter, SiPandas, SiNumpy } from 'react-icons/si';
 
 const Experience = () => {
   const experiences = [
     {
-      title: 'Full Stack Developer',
-      company: 'CipherSchool',
-      period: '2023 (Training)',
-      description: 'Led the development of scalable web applications using modern technologies.',
-      icon: FaCode,
+      title: 'Machine Learning Engineer',
+      company: 'AI Solutions Inc.',
+      period: '2023 - Present',
+      description: 'Leading the development of ML models and pipelines for various applications.',
+      icon: FaBrain,
       color: 'accent',
       achievements: [
-        'Developed and maintained full-stack applications',
-        'Implemented cloud-based solutions',
-        'Led a team of 5 developers'
+        'Developed and deployed deep learning models for computer vision tasks',
+        'Implemented MLOps pipelines for automated model training and deployment',
+        'Led a team of 3 ML engineers in developing AI solutions'
       ],
       technologies: [
-        { icon: SiTypescript, name: 'TypeScript', color: '#3178C6' },
-        { icon: SiReact, name: 'React', color: '#61DAFB' },
-        { icon: SiNextdotjs, name: 'Next.js', color: '#000000' },
-        { icon: SiNodedotjs, name: 'Node.js', color: '#339933' },
-        { icon: SiMongodb, name: 'MongoDB', color: '#47A248' }
+        { icon: SiTensorflow, name: 'TensorFlow', color: '#FF6F00' },
+        { icon: SiPytorch, name: 'PyTorch', color: '#EE4C2C' },
+        { icon: SiPython, name: 'Python', color: '#3776AB' },
+        { icon: SiDocker, name: 'Docker', color: '#2496ED' }
       ]
     },
     {
-      title: 'Cloud Engineer',
-      company: 'CipherSchool',
-      period: '2025',
-      description: 'Designed and implemented cloud infrastructure solutions.',
-      icon: FaCloud,
+      title: 'Data Scientist',
+      company: 'Data Analytics Corp',
+      period: '2022 - 2023',
+      description: 'Applied machine learning techniques to solve complex business problems.',
+      icon: FaChartLine,
       color: 'accent',
       achievements: [
-        'Architected cloud-native applications',
-        'Optimized cloud resources',
-        'Implemented security best practices'
-      ],
-      technologies: [
-        { icon: SiAmazon, name: 'AWS', color: '#FF9900' },
-        { icon: SiDocker, name: 'Docker', color: '#2496ED' },
-        { icon: SiPython, name: 'Python', color: '#3776AB' }
-      ]
-    },
-    {
-      title: 'Security Specialist',
-      company: 'Secure Systems',
-      period: '2024',
-      description: 'Specialized in cybersecurity and threat detection.',
-      icon: FaShieldAlt,
-      color: 'accent',
-      achievements: [
-        'Developed security protocols',
-        'Conducted penetration testing',
-        'Implemented security measures'
+        'Built predictive models for customer behavior analysis',
+        'Developed NLP solutions for text classification',
+        'Created data visualization dashboards for business insights'
       ],
       technologies: [
         { icon: SiPython, name: 'Python', color: '#3776AB' },
-        { icon: SiJavascript, name: 'JavaScript', color: '#F7DF1E' }
+        { icon: SiPandas, name: 'Pandas', color: '#150458' },
+        { icon: SiNumpy, name: 'NumPy', color: '#013243' },
+        { icon: SiJupyter, name: 'Jupyter', color: '#F37626' }
+      ]
+    },
+    {
+      title: 'AI Research Intern',
+      company: 'Research Lab',
+      period: '2021 - 2022',
+      description: 'Conducted research in deep learning and neural networks.',
+      icon: FaRobot,
+      color: 'accent',
+      achievements: [
+        'Published research paper on novel neural network architectures',
+        'Developed new algorithms for image recognition',
+        'Presented findings at international conferences'
+      ],
+      technologies: [
+        { icon: SiPytorch, name: 'PyTorch', color: '#EE4C2C' },
+        { icon: SiPython, name: 'Python', color: '#3776AB' },
+        { icon: SiAmazon, name: 'AWS', color: '#FF9900' }
       ]
     }
   ];

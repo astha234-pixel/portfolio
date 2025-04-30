@@ -67,6 +67,14 @@ const Header = () => {
               Education
             </motion.a>
             <motion.a
+              href="#certificates"
+              className="text-sm font-medium text-text-secondary hover:text-accent transition-colors"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Certificates
+            </motion.a>
+            <motion.a
               href="#contact"
               className="text-sm font-medium text-text-secondary hover:text-accent transition-colors"
               whileHover={{ scale: 1.05 }}

@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { IconType } from 'react-icons';
 import { 
-  SiTypescript, SiReact, SiNextdotjs, SiPython, SiAmazon, 
-  SiDocker, SiJavascript, SiNodedotjs, SiMongodb, SiPostgresql,
-  SiGit, SiGithub, SiTailwindcss, SiFigma, SiLinux
+  SiTensorflow, SiPytorch, SiScikitlearn, SiPython, SiAmazon, 
+  SiDocker, SiJupyter, SiPandas, SiNumpy, SiPostgresql,
+  SiGit, SiGithub, SiLinux, SiKubernetes, SiTerraform
 } from 'react-icons/si';
-import { FaCode, FaServer, FaDatabase, FaTools } from 'react-icons/fa';
+import { FaBrain, FaDatabase, FaTools, FaChartLine } from 'react-icons/fa';
 
 interface Skill {
   icon: IconType;
@@ -14,47 +14,56 @@ interface Skill {
   level: number;
 }
 
+type CategoryKey = 'ml' | 'data' | 'devops' | 'research';
+
 interface Category {
   icon: IconType;
   title: string;
   skills: Skill[];
 }
 
-type CategoryKey = 'frontend' | 'backend' | 'devops';
-
 const Skills = () => {
-  const [activeCategory, setActiveCategory] = useState<CategoryKey>('frontend');
+  const [activeCategory, setActiveCategory] = useState<CategoryKey>('ml');
 
   const categories: Record<CategoryKey, Category> = {
-    frontend: {
-      icon: FaCode,
-      title: 'Frontend Development',
+    ml: {
+      icon: FaBrain,
+      title: 'Machine Learning',
       skills: [
-        { icon: SiTypescript, name: 'TypeScript', level: 90 },
-        { icon: SiReact, name: 'React', level: 95 },
-        { icon: SiNextdotjs, name: 'Next.js', level: 85 },
-        { icon: SiJavascript, name: 'JavaScript', level: 90 },
-        { icon: SiTailwindcss, name: 'Tailwind CSS', level: 95 }
+        { icon: SiTensorflow, name: 'TensorFlow', level: 90 },
+        { icon: SiPytorch, name: 'PyTorch', level: 95 },
+        { icon: SiScikitlearn, name: 'Scikit-learn', level: 85 },
+        { icon: SiPython, name: 'Python ML', level: 90 }
       ]
     },
-    backend: {
-      icon: FaServer,
-      title: 'Backend Development',
+    data: {
+      icon: FaChartLine,
+      title: 'Data Science',
       skills: [
-        { icon: SiNodedotjs, name: 'Node.js', level: 90 },
-        { icon: SiPython, name: 'Python', level: 85 },
-        { icon: SiPostgresql, name: 'PostgreSQL', level: 80 },
-        { icon: SiMongodb, name: 'MongoDB', level: 85 }
+        { icon: SiPandas, name: 'Pandas', level: 95 },
+        { icon: SiNumpy, name: 'NumPy', level: 90 },
+        { icon: SiJupyter, name: 'Jupyter', level: 85 },
+        { icon: SiPostgresql, name: 'SQL', level: 80 }
       ]
     },
     devops: {
       icon: FaTools,
-      title: 'DevOps & Cloud',
+      title: 'MLOps & Cloud',
       skills: [
         { icon: SiAmazon, name: 'AWS', level: 85 },
         { icon: SiDocker, name: 'Docker', level: 80 },
-        { icon: SiGit, name: 'Git', level: 90 },
-        { icon: SiLinux, name: 'Linux', level: 85 }
+        { icon: SiKubernetes, name: 'Kubernetes', level: 75 },
+        { icon: SiTerraform, name: 'Terraform', level: 70 }
+      ]
+    },
+    research: {
+      icon: FaBrain,
+      title: 'Research Skills',
+      skills: [
+        { icon: SiPython, name: 'Research Methods', level: 85 },
+        { icon: SiPython, name: 'Paper Writing', level: 80 },
+        { icon: SiPython, name: 'Experimentation', level: 85 },
+        { icon: SiPython, name: 'Data Analysis', level: 90 }
       ]
     }
   };

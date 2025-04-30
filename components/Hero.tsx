@@ -1,34 +1,31 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaDownload, FaAws, FaPython, FaDocker, FaReact } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaDownload, FaPython, FaBrain } from 'react-icons/fa';
 import { 
-  SiTypescript, SiReact, SiNextdotjs, SiPython, SiAmazon, SiDocker,
-  SiJavascript, SiNodedotjs, SiMongodb, SiPostgresql, SiGit, SiLinux,
-  SiTailwindcss, SiGraphql, SiKubernetes, SiTerraform, SiJenkins
+  SiTensorflow, SiPytorch, SiScikitlearn, SiPython, SiAmazon, SiDocker,
+  SiJupyter, SiPandas, SiNumpy, SiMongodb, SiPostgresql, SiGit, SiLinux,
+  SiKubernetes, SiTerraform, SiJenkins
 } from 'react-icons/si';
 
 const TITLES = [
-  { text: "Full Stack Developer", className: "text-text-secondary" },
-  { text: "Cloud Engineer", className: "text-accent" },
-  { text: "Security Specialist", className: "text-red-500" }
+  { text: "Machine Learning Engineer", className: "text-text-secondary" },
+  { text: "Data Scientist", className: "text-accent" },
+  { text: "AI Researcher", className: "text-red-500" }
 ];
 
 const techIcons = [
-  { name: 'AWS', icon: <FaAws />, color: '#FF9900' },
-  { name: 'Docker', icon: <FaDocker />, color: '#2496ED' },
-  { name: 'Git', icon: <SiGit />, color: '#F05032' },
-  { name: 'GitHub', icon: <FaGithub />, color: '#181717' },
-  { name: 'React', icon: <FaReact />, color: '#61DAFB' },
-  { name: 'JavaScript', icon: <SiJavascript />, color: '#F7DF1E' },
-  { name: 'TypeScript', icon: <SiTypescript />, color: '#3178C6' },
+  { name: 'TensorFlow', icon: <SiTensorflow />, color: '#FF6F00' },
+  { name: 'PyTorch', icon: <SiPytorch />, color: '#EE4C2C' },
+  { name: 'Scikit-learn', icon: <SiScikitlearn />, color: '#F7931E' },
   { name: 'Python', icon: <FaPython />, color: '#3776AB' },
-  { name: 'MongoDB', icon: <SiMongodb />, color: '#47A248' },
-  { name: 'Node.js', icon: <SiNodedotjs />, color: '#339933' },
+  { name: 'Jupyter', icon: <SiJupyter />, color: '#F37626' },
+  { name: 'Pandas', icon: <SiPandas />, color: '#150458' },
+  { name: 'NumPy', icon: <SiNumpy />, color: '#013243' },
+  { name: 'AWS', icon: <SiAmazon />, color: '#FF9900' },
+  { name: 'Docker', icon: <SiDocker />, color: '#2496ED' },
+  { name: 'Git', icon: <SiGit />, color: '#F05032' },
   { name: 'Linux', icon: <SiLinux />, color: '#FCC624' },
   { name: 'Kubernetes', icon: <SiKubernetes />, color: '#326CE5' },
-  { name: 'Next.js', icon: <SiNextdotjs />, color: '#000000' },
-  { name: 'PostgreSQL', icon: <SiPostgresql />, color: '#4169E1' },
-  { name: 'GraphQL', icon: <SiGraphql />, color: '#E535AB' },
   { name: 'Terraform', icon: <SiTerraform />, color: '#7B42BC' }
 ];
 
@@ -107,7 +104,7 @@ const Hero = () => {
               <motion.h1
                 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-hero bg-clip-text text-transparent"
               >
-                Hi, I'm <span className="text-accent">Aditya</span>
+                Hi, I'm <span className="text-accent">Astha</span>
               </motion.h1>
               <motion.div
                 className="absolute -bottom-2 left-0 w-32 h-1 bg-gradient-hero rounded-full"
@@ -156,9 +153,9 @@ const Hero = () => {
               className="flex gap-4 mb-8 justify-center md:justify-start"
             >
               {[
-                { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/aditya-singh-55877a1b6/", label: "LinkedIn" },
+                { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/aastha-chauhan-a9b571252", label: "LinkedIn" },
                 { icon: <FaGithub />, href: "https://github.com/Adityasingh098", label: "GitHub" },
-                { icon: <FaEnvelope />, href: "mailto:your.email@example.com", label: "Email" }
+                { icon: <FaEnvelope />, href: "mailto:chauhanaastha438@gmail.com", label: "Email" }
               ].map((social, index) => (
                 <motion.a
                   key={social.label}
@@ -209,7 +206,7 @@ const Hero = () => {
                 </span>
               </motion.a>
               <motion.a
-                href="https://drive.google.com/file/d/1VO5VDNd6yEGR5NTakvF0KBBRquMV7ppL/view?usp=sharing"
+                href="https://drive.google.com/file/d/1RasSXmZaORyrNc0Z9Ij6adqrppoTdaKJ/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -2 }}

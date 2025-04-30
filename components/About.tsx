@@ -122,8 +122,8 @@ const About = () => {
               <div className="absolute inset-0 bg-accent rounded-full blur-xl opacity-20" />
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-accent/20">
                 <Image
-                  src="/profile.jpg"
-                  alt="Aditya"
+                  src="/asthaimg.jpeg"
+                  alt="Astha"
                   fill
                   className="object-cover"
                   priority
@@ -139,7 +139,7 @@ const About = () => {
               className="flex-1 text-center md:text-left"
             >
               <h3 className="text-xl md:text-3xl font-bold text-text-primary mb-4 md:mb-6">
-                Full Stack Developer & Cloud Engineer
+                Full Stack Developer & ML Engineer
               </h3>
               <p className="text-base md:text-lg text-text-secondary mb-6 md:mb-8 leading-relaxed">
                 I'm a passionate developer with expertise in building scalable web applications
