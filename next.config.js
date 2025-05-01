@@ -4,6 +4,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
     unoptimized: true,
+    domains: ['localhost'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -11,6 +12,9 @@ const nextConfig = {
       },
     ],
   },
+  output: 'export',
+  basePath: '/portfolio',
+  assetPrefix: '/portfolio/'
 }
 
 module.exports = nextConfig 
