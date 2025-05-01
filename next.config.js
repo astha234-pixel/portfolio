@@ -12,9 +12,12 @@ const nextConfig = {
       },
     ],
   },
-  output: 'export',
-  basePath: '/portfolio',
-  assetPrefix: '/portfolio/'
+  // Only apply these settings in production
+  ...(process.env.NODE_ENV === 'production' ? {
+    output: 'export',
+    basePath: '/portfolio',
+    assetPrefix: '/portfolio/'
+  } : {})
 }
 
 module.exports = nextConfig 
