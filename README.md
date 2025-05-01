@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio Website
 
 A modern portfolio website built with Next.js and Tailwind CSS.
@@ -39,3 +40,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Deployment
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js. 
+=======
+# portfolio
+>>>>>>> 050c066b1055179dc78cd09a17c4abf3ebce1b02
